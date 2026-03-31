@@ -2,6 +2,12 @@
   "name": "@fandhe-ai/shared-config-playwright",
   "description": "Shared Playwright configuration for E2E testing",
   "version": "0.0.0",
+  "devDependencies": {
+    "@commitlint/cli": "20.5.0",
+    "@commitlint/config-conventional": "20.5.0",
+    "@commitlint/types": "20.5.0",
+    "lefthook": "2.1.4"
+  },
   "exports": {
     "./configs/*": "./configs/*.ts"
   },
@@ -9,14 +15,8 @@
     "@playwright/test": "1.58.2"
   },
   "private": true,
-  "type": "module",
   "scripts": {
     "prepare": "lefthook install"
   },
-  "devDependencies": {
-    "@commitlint/cli": "20.5.0",
-    "@commitlint/config-conventional": "20.5.0",
-    "@commitlint/types": "20.5.0",
-    "lefthook": "2.1.4"
-  }
+  "type": "module"
 }
