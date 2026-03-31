@@ -6,14 +6,14 @@ Playwright（E2E テスト）の共有設定。
 
 | パス | 説明 |
 |------|------|
-| `@fandhe-ai/shared-config-playwright/configs/base` | `createBaseConfig` ファクトリ関数（CI 対応、リトライ・レポーター設定済み） |
+| `@fandhe-ai/shared-config-playwright/base` | `createBaseConfig` ファクトリ関数（CI 対応、リトライ・レポーター設定済み） |
 
 ## 使用方法
 
 `playwright.config.ts` で `createBaseConfig` を import して使用する:
 
 ```ts
-import { createBaseConfig } from "@fandhe-ai/shared-config-playwright/configs/base";
+import { createBaseConfig } from "@fandhe-ai/shared-config-playwright/base";
 
 export default createBaseConfig({
   testDir: "./src",

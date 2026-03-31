@@ -1,0 +1,9 @@
+{
+  "extends": "@fandhe-ai/shared-config-typescript/base",
+  "compilerOptions": {
+    "types": ["node"],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
